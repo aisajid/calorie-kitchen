@@ -64,7 +64,8 @@ const Recipes = () => {
 
     return (
         <div className="container mx-auto text-center mb-24">
-            {
+            <div className="mx-2">
+                {
                 showToast && (
                 <div className="toast toast-top toast-end z-0">
                     <div className="alert bg-[#0BE58A]">
@@ -76,7 +77,7 @@ const Recipes = () => {
             <h3 className="text-[#150B2B] font-semibold text-4xl mb-6">Our Recipes</h3>
             <p className="text-base max-w-4xl text-[#150b2b99] mx-auto mb-12">Discover delicious recipes for every occasion. Explore easy-to-follow cooking ideas, fresh ingredients, and flavorful dishes to make every meal special.
             </p>
-            <div className="grid grid-cols-1 lg:grid-cols-12 ">
+            <div className="grid grid-cols-1 lg:grid-cols-12">
                 {/* recipe container */}
                 <div className="lg: col-span-7">
                     <div className=" grid md:grid-cols-2 gap-6">
@@ -90,9 +91,10 @@ const Recipes = () => {
                 </div>
 
                 {/* sidebar */}
-                <div className=" lg:col-span-5 rounded-2xl ml-6 border-2 border-[#BABABA] py-8 h-fit ">
+                <div className=" lg:col-span-5 rounded-2xl mt-6 lg:mt-0 lg:ml-6 border-2 border-[#BABABA] py-8 h-fit ">
                     <Sidebar wantToCookTable={wantToCookTable} totalTime={totalTime} totalCalories={totalCalories} handlePreparing={handlePreparing} currentlyTable={currentlyTable} currentTime={currentTime} currentCalories={currentCalories}></Sidebar>
                 </div>
+            </div>
             </div>
         </div>
     );
