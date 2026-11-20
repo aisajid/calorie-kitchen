@@ -7,8 +7,8 @@ import Profile from "../../assets/icons/Frame 5.png"
 
 function Header() {
     return (
-        <header className="mt-3 max-w-7xl mx-auto">
-            <nav className="flex items-center justify-between">
+        <header className="container mx-auto mb-24">
+            <nav className="flex items-center justify-between py-12 mx-2">
                 <div>
                     <h3 className="text-[#150B2B] text-3xl font-bold">Calorie Kitchen</h3>
                 </div>
@@ -30,7 +30,16 @@ function Header() {
             </nav>
 
             {/* banner section */}
-            <div className="bg-[url()]">
+            <div className="bg-[url(image/Rectangle.png)] bg-no-repeat bg-center bg-size-[100%_100%] 
+            rounded-3xl px-24 md:py-28 mx-2 text-center">
+                <h3 className="text-5xl font-bold text-white max-w-4xl mx-auto mb-6 leading-20">Discover an exceptional cooking class tailored for you!</h3>
+                <p className="mb-10 text-white text-lg max-w-4xl mx-auto">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+                <div >
+                    <button className="rounded-full text-xl font-semibold border-none bg-[#0BE58A] py-5 px-7 mr-6 cursor-pointer
+                    hover:bg-[#02b76c]">Explore Now</button>
+                    <button className="rounded-full text-xl text-white
+                     font-semibold border-2 bg-transparent py-5 px-7 cursor-pointer hover:bg-[#02b76c]">Our Feedback</button>
+                </div>
 
             </div>
         </header>
